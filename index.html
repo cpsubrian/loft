@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Scrolling Layout Test</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+
+    <div class="nav-wrapper">
+      <div class="nav">
+        <div class="nav-links">
+          <div class="nav-item active"><a class="nav-link" href="#" data-section-id="one">Section 1</a></div>
+          <div class="nav-item"><a class="nav-link" href="#" data-section-id="two">Section 2</a></div>
+          <div class="hidden-logo">
+            Hidden Logo
+          </div>
+          <div class="nav-item"><a class="nav-link" href="#" data-section-id="three">Section 3</a></div>
+          <div class="nav-item"><a class="nav-link" href="#" data-section-id="four">Section 4</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+
+      <section id="one">
+        <div class="splash" data-image="img/loft-image-1-compr.jpg" data-parallax="false" data-cover-ratio="1">
+          <div class="splash-content">
+            <div class="tagline">
+              <p>Logo & tagline text</p>
+            </div>
+            <div class="form-wrapper">
+              <div class="form">
+
+                <h2>Ask Us About Your Event</h2>
+
+                <div class="close">
+                  <a class="close-inner">
+                    <span class="icon">X</span>
+                  </a>
+                </div>
+
+                <div class="initial-fields">
+                  <div class="form-row two-up alt">
+                    <div class="field">
+                      <span class="label">First Name <span class="asterisk">*</span></span>
+                      <input type="text" />
+                    </div>
+                    <div class="field">
+                      <span class="label">Last Name <span class="asterisk">*</span></span>
+                      <input type="text" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hidden-fields">
+                  <div class="form-row two-up alt">
+                    <div class="field">
+                      <span class="label">Phone <span class="asterisk">*</span></span>
+                      <input type="text" />
+                    </div>
+                    <div class="field">
+                      <span class="label">Email <span class="asterisk">*</span></span>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="form-row full">
+                    <div class="field">
+                      <span class="label">Organization Name</span>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="form-row three-up">
+                    <div class="field">
+                      <span class="label">Event Date</span>
+                      <input type="text" />
+                    </div>
+                    <div class="field">
+                      <span class="label">Event Time</span>
+                      <input type="text" />
+                    </div>
+                    <div class="field">
+                      <span class="label">Total Guests</span>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div class="form-row full">
+                    <div class="field">
+                      <span class="label">Event Description</span>
+                      <textarea></textarea>
+                    </div>
+                  </div>
+
+                  <div class="submit">
+                    <a href="#" class="submit-inner">Send</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="prompt-wrapper">
+              <div class="prompt-inner">
+                <div class="prompt-text">
+                  Scroll
+                </div>
+              </div>
+            </div>
+
+            <div class="diamond-overlay">&nbsp;</div>
+            <div class="image-mask">&nbsp;</div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="section-body">Section 1 copy content</div>
+        </div>
+      </section>
+
+      <section id="two">
+        <div class="splash" data-image="img/loft-image-2-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
+          <div class="splash-content">
+            <div class="diamond-overlay">&nbsp;</div>
+            <div class="image-mask">&nbsp;</div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="section-header-wrapper">
+            <div class="section-header">
+              h2
+            </div>
+          </div>
+          <div class="section-body">Section 2 copy content</div>
+        </div>
+      </section>
+
+      <section id="three">
+        <div class="splash" data-image="img/loft-image-3-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
+          <div class="splash-content">
+            <div class="diamond-overlay">&nbsp;</div>
+            <div class="image-mask">&nbsp;</div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="section-header-wrapper">
+            <div class="section-header">
+              h3
+            </div>
+          </div>
+          <div class="section-body">Section 3 copy content</div>
+        </div>
+      </section>
+
+      <section id="four">
+        <div class="splash" data-image="img/loft-image-4-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
+          <div class="splash-content">
+            <div class="diamond-overlay">&nbsp;</div>
+            <div class="image-mask">&nbsp;</div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="section-header-wrapper">
+            <div class="section-header">
+              h4
+            </div>
+          </div>
+          <div class="section-body">Section 4 copy content</div>
+        </div>
+      </section>
+
+    </div>
+
+    <script src="js/jquery-1.0.js"></script>
+    <script src="js/jquery-easing.js"></script>
+    <script src="js/jquery.imageScroll.min.js"></script>
+    <script src="js/init.js"></script>
+
+  </body>
+
+</html>
