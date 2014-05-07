@@ -41,7 +41,7 @@ NAV
 .nav-wrapper {
   position: fixed;
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   z-index: 3;
   -webkit-transform: translateZ(1px);
 }
@@ -127,7 +127,7 @@ NAV
   color: #fff;
   background: #DBA818;
   padding: 0.5em 1em;
-  font-size: 1.15rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   z-index: 1;
@@ -146,7 +146,7 @@ NAV
   background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
   background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );*/
-  /*background: rgba(0,0,0,0.85);*/
+  background: rgba(0,0,0,0.85);
 }
 
 
@@ -343,7 +343,7 @@ INTRO
   opacity: 0;
 }
 .tagline.small {
-  top: 8rem;
+  top: 6.5rem;
   font-size: 2rem;
 }
 .tagline.small .logo {
@@ -661,6 +661,7 @@ THE SPACE
 .copy li {
   margin-bottom: 0.5em;
   font-size: 0.9em;
+  color: #444;
 }
 
 #three .flourish,
@@ -822,6 +823,7 @@ CONTACT
 #five h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 #five h4 {
   margin-top: 0.75rem;
