@@ -20,8 +20,10 @@ div, p, ul, li, section, input, textarea {
 p {
   margin: 0;
 }
-a {
+a,
+a:visited {
   text-decoration: none;
+  color: orange;
 }
 input,
 textarea {
@@ -726,12 +728,17 @@ CONTACT
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-#four .flourish-inner {
-  padding-top: 3.5rem;
+#four .flouris-inner {
   padding-bottom: 1.5rem;
 }
+#four .flourish.directions .flourish-inner {
+  padding-top: 3.5rem;
+}
+#four .flourish.parking .flourish-inner {
+  padding-top: 2.25rem;
+}
 
-.directions h3.section-subhead {
+#four h3.section-subhead {
   margin: 0 0 2.25rem 0;
   text-align: center;
   font-size: 2rem;
@@ -740,43 +747,79 @@ CONTACT
   letter-spacing: 0.02em;
 }
 
-.directions-columns::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.directions h3 {
+#four h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
-.directions h4 {
+#four h4 {
   margin-top: 0.75rem;
   margin-bottom: 0.5rem;
 }
 
-.directions ul {
+#four ul {
   padding-left: 1.25em;
   margin: 0;
 }
-.directions li {
-  margin-bottom: 0.5em;
+#four li {
+  margin-bottom: 0.75em;
   color: #444;
   font-size: 0.9em;
 }
 
+.directions-columns,
+.parking-columns {
+  display: table;
+  width: 100%;
+}
 .map,
+.directions-text {
+  display: table-cell;
+  vertical-align: top;
+}
+.directions-text {
+  padding-left: 3rem;
+}
+.directions-text::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 .directions-1,
 .directions-2 {
   float: left;
-  width: 30%;
+  width: 47.5%;
 }
-.map,
 .directions-1 {
   margin-right: 5%;
 }
-
+.map {
+  width: 20rem;
+}
 .map iframe {
-  width: 100%;
-  max-height: 18rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.parking p {
+  color: #444;
+  font-size: 0.9em;
+  margin-bottom: 0.75rem;
+}
+.parking .photo-container {
+  text-align: center;
+}
+.parking .intro-photo {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+.parking-columns .left-column,
+.parking-columns .right-column {
+  display: table-cell;
+  vertical-align: top;
+}
+.parking-columns .left-column {
+  width: 20rem;
+}
+.parking-columns .right-column {
+  padding-left: 3rem;
 }
