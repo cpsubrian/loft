@@ -8,6 +8,47 @@ $(function() {
 
   var scrollTimer;
 
+  function shuffle(sourceArray) {
+    for (var n = 0; n < sourceArray.length - 1; n++) {
+      var k = n + Math.floor(Math.random() * (sourceArray.length - n));
+      var temp = sourceArray[k];
+
+      sourceArray[k] = sourceArray[n];
+      sourceArray[n] = temp;
+    }
+    return sourceArray;
+  }
+
+  function createGallery() {
+    var $gallery = $('.gallery');
+
+    var markup = "<li>&nbsp;</li>";
+    var urlArray = [];
+
+    for (i=0; i<25; i++) {
+      urlArray.push('img/gallery/' + (i + 1) + '-comp.jpg');
+      $gallery.append(markup);
+    }
+
+    var shuffledUrlArray = shuffle(urlArray);
+
+    $.each($('.gallery > li'), function(k,v) {
+      $(v).css({
+        'background-image': 'url("' + shuffledUrlArray[k] + '")',
+      });
+    });
+  }
+
+  function updateGallery() {
+    $.each($('.gallery > li'), function(k,v) {
+      var $self = $(v);
+
+      var width = $self.outerWidth();
+
+      $self.css({ height: Math.ceil(width * 0.75) + 'px' });
+    });
+  }
+
   function alignSplashContent() {
     $.each($('.splash-content'), function(k,v) {
       var $self = $(this);
@@ -40,6 +81,10 @@ $(function() {
 
       var sectionStart = $section.offset().top;
       var sectionEnd = sectionStart + $section.outerHeight();
+
+      if ($section.attr('id') == 'two') {
+        sectionStart -= $('.nav').outerHeight();
+      }
 
       if (!$section.next().length && currentPosition == ($('body').outerHeight() - $(window).height()) && ($(window).height() - $section.outerHeight()) < 200) {
         $('.nav-item.active').removeClass('active');
@@ -125,11 +170,14 @@ $(function() {
     }, 500);
 
     updateNav();
+    createGallery();
+    updateGallery();
     alignSplashContent();
   });
 
   $(window).resize(function() {
     alignSplashContent();
+    updateGallery();
   });
 
   $(window).scroll(function() {
@@ -142,6 +190,10 @@ $(function() {
     var $parent = $(this).parent();
     var sectionId = $self.attr('data-section-id');
     var scrollPosition = $('#' + sectionId).offset().top;
+
+    if (sectionId == 'two') {
+      scrollPosition -= $('.nav').outerHeight();
+    }
 
     scrollTimer = null;
 
