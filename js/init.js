@@ -107,6 +107,13 @@ $(function() {
       $('.nav-wrapper').removeClass('visible');
     }
 
+    if (currentPosition >= $('#two').offset().top - $('.nav').outerHeight()) {
+      $('.hidden-cta').addClass('visible');
+    }
+    else {
+      $('.hidden-cta').removeClass('visible');
+    }
+
     closeForm();
     alignSplashContent();
   }
