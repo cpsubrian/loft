@@ -40,6 +40,7 @@ FORM
 .device .form-wrapper,
 .device .prompt-wrapper,
 .device .section-header-wrapper,
+.device .hidden-cta,
 .device .image-mask,
 .device .diamond-overlay {
   -webkit-transform: none;

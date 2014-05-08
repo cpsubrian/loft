@@ -393,18 +393,19 @@ $(function() {
   */
   
   $(document).ready(function() {
-    // if (!Modernizr.touch) {
-    //   $('.splash').imageScroll({
-    //     container: $('.main')
-    //   });
-    // }
-    // else {
-    //   $('body').addClass('device');
-    //   setStandardBackgrounds();
-    // } TEMPORARILY DISABLED
+    if (!Modernizr.touch) {
+      $('.splash').imageScroll({
+        container: $('.main')
+      });
+    }
+    else {
+      $('body').addClass('device');
+      setStandardBackgrounds();
+    }
 
-    $('body').addClass('device');
-    setStandardBackgrounds();
+    // FOR TESTING IN CHROME
+    // $('body').addClass('device');
+    // setStandardBackgrounds();
 
     setTimeout(function() {
       if ($('body').hasClass('device')) {

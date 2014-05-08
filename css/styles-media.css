@@ -138,3 +138,77 @@ THE SPACE
   }
 
 }
+
+
+/*
+---------------------------------------
+CONTACT
+---------------------------------------
+*/
+
+@media (max-width: 880px) {
+
+  #five .contact-info {
+    min-height: 10rem;
+  }
+  #five .contact-info .left-column,
+  #five .contact-info .right-column {
+    font-size: 0.85em;
+  }
+  #five .contact-info .center-column {
+    width: 10rem;
+  }
+  #five .contact-info .intro-photo {
+    width: 10rem;
+    height: 10rem;
+  }
+  #five .map,
+  #five .directions-text {
+    display: block;
+    width: 100%;
+  }
+  #five .map iframe {
+    width: 100%;
+  }
+  #five .directions-text {
+    margin-top: 2rem;
+    padding-left: 0;
+  }
+  #five .parking-columns .left-column,
+  #five .parking-columns .right-column {
+    display: block;
+    width: 100%;
+  }
+  #five .left-column {
+    position: relative;
+  }
+  #five .parking-columns .right-column {
+    padding-left: 0;
+  }
+  #five .metro {
+    padding-right: 13rem;
+    min-height: 13rem;
+    margin-bottom: 3rem;
+  }
+  #five .photo-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12rem;
+  }
+  #five .parking .intro-photo {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 0;
+  }
+  #five .parking .photo-inset-border {
+    top: 0.35rem;
+    bottom: 0.35rem;
+    left: 0.35rem;
+    right: 0.35rem;
+  }
+  #five .street-parking {
+    margin-bottom: 2rem;
+  }
+
+}
