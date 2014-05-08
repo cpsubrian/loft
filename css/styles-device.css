@@ -43,7 +43,7 @@ FORM
 .device .diamond-overlay {
   -webkit-transform: none;
 }
-.device .form-wrapper {
+.device .form-wrapper.open-device {
   z-index: 5;
 }
 .tagline {
@@ -134,7 +134,7 @@ FORM
   padding: 0.75em 1em;
 }
 .hidden-form p {
-  color: #cecece;
+  color: #fff;
   max-width: 50%;
   margin: 0 auto;
   line-height: 1.3em;
