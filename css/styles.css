@@ -31,6 +31,11 @@ textarea {
   -webkit-transition: background 0.1s ease-in;
   -moz-transition: background 0.1s ease-in;
    transition: background 0.1s ease-in;
+},
+input[type='text'],
+input[type='number'],
+textarea {
+  font-size: 16px;
 }
 
 
@@ -693,8 +698,8 @@ THE SPACE
   color: #444;
 }
 
-#three .flourish,
-#five .flourish {
+#three .section-content .flourish,
+#five .section-content .flourish {
   width: 100%;
   display: block;
   position: relative;

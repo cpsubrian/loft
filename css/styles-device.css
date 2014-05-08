@@ -1,0 +1,127 @@
+/*
+===============================
+TOUCH DEVICE STYLE ADJUSTMENTS
+===============================
+*/
+
+.hidden-form {
+  display: none;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+   transition: opacity 0.3s ease-in;
+}
+.form-flourish {
+  display: none;
+}
+
+.device .prompt-wrapper {
+  z-index: 1;
+}
+.device .imageHolder:nth-child(4) {
+  z-index: 5;
+}
+.device .nav-wrapper,
+.device .form-wrapper,
+.device .prompt-wrapper,
+.device .image-mask,
+.device .diamond-overlay {
+  -webkit-transform: none;
+}
+.device .form-wrapper {
+  z-index: 5;
+}
+.tagline {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+   transform: translateY(-50%);
+}
+.device .form {
+  position: fixed;
+  z-index: 5;
+  max-width: 100%;
+  padding: 3rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+   transition: opacity 0.3s ease-in;
+}
+.device .form .label {
+  font-size: 1.2rem;
+}
+.device .form-flourish {
+  display: block;
+  padding: 0.75rem 0 1.5rem 0;
+  text-align: center;
+  opacity: 0.5;
+}
+.device .form-flourish img {
+  width: 30rem;
+}
+.device .form.visible {
+  opacity: 1;
+}
+.device .open-device .form {
+  overflow: scroll;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background: rgba(0,0,0,0.75);
+}
+.device .open-device .form .close {
+  display: block;
+  position: relative;
+}
+.device .form h2 {
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+.device .open-device .form input,
+.device .open-device .form textarea {
+  background: #fff;
+  padding: 0.5em;
+}
+.device .open-device .form .submit {
+  margin-top: 2rem;
+}
+.device .open-device .form .submit-inner {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.device .open-device .form .hidden-fields {
+  display: block;
+}
+.device .hidden-form {
+  display: block;
+}
+.device .open-device .hidden-form {
+  opacity: 0;
+}
+.device .form-wrapper {
+  bottom: 10rem;
+}
+
+.hidden-form {
+  text-align: center;
+  -webkit-transform: translateZ(1px);
+}
+.hidden-form .form-open-button {
+  display: inline-block;
+  background: #DBA818;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+  padding: 0.75em 1em;
+}
+.hidden-form p {
+  color: #cecece;
+  max-width: 50%;
+  margin: 0 auto;
+  line-height: 1.3em;
+  margin-top: 1.5rem;
+}

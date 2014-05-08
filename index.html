@@ -4,7 +4,9 @@
 
   <head>
     <title>Scrolling Layout Test</title>
+
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles-device.css" />
 
     <!-- Font Awesome -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -38,7 +40,7 @@
     <div class="main">
 
       <section id="one">
-        <div class="splash" data-image="img/loft-image-1-compr.jpg" data-parallax="false" data-cover-ratio="1">
+        <div class="splash" data-image="img/loft-image-1-compr.jpg" data-image-mobile="img/loft-image-1-compr.jpg" data-parallax="false" data-cover-ratio="1">
           <div class="splash-content">
             <div class="tagline">
               <div class="logo">
@@ -46,14 +48,26 @@
               </div>
             </div>
             <div class="form-wrapper">
-              <div class="form">
 
-                <h2 class="tk-modesto-text">Ask Us About Your Event</h2>
+              <!-- Device form -->
+              <div class="hidden-form">
+                <a href="#" class="form-open-button tk-modesto-text">Ask us about your event</a>
+                <p>...or scroll to learn more about one of DC's hottest event spaces.</p>
+              </div>
+
+              <!-- Desktop form -->
+              <div class="form">
 
                 <div class="close">
                   <a class="close-inner">
                     <span class="icon"><i class="fa fa-times"></i></span>
                   </a>
+                </div>
+
+                <h2 class="tk-modesto-text">Ask Us About Your Event</h2>
+
+                <div class="form-flourish">
+                  <img src="img/flourish-4.png" />
                 </div>
 
                 <div class="initial-fields">
@@ -154,7 +168,7 @@
       </section>
 
       <section id="three">
-        <div class="splash" data-image="img/loft-image-2-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
+        <div class="splash" data-image="img/loft-image-2-compr.jpg" data-image-mobile="img/loft-image-2-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
           <div class="splash-content">
             <div class="section-header-wrapper">
               <div class="section-header-inner">
@@ -226,7 +240,7 @@
       </section>
 
       <section id="four">
-        <div class="splash" data-image="img/loft-image-3-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
+        <div class="splash" data-image="img/loft-image-3-compr.jpg" data-image-mobile="img/loft-image-3-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
           <div class="splash-content">
             <div class="section-header-wrapper">
               <div class="section-header-inner">
@@ -250,7 +264,7 @@
       </section>
 
       <section id="five">
-        <div class="splash" data-image="img/loft-image-4-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
+        <div class="splash" data-image="img/loft-image-4-compr.jpg" data-image-mobile="img/loft-image-4-compr.jpg" data-speed="0.1" data-cover-ratio="0.5">
           <div class="splash-content">
             <div class="section-header-wrapper">
               <div class="section-header-inner">
@@ -400,6 +414,7 @@
 
     </div>
 
+    <script src="js/modernizr.js"></script>
     <script src="js/jquery-1.0.js"></script>
     <script src="js/jquery-easing.js"></script>
     <script src="js/jquery.imageScroll.min.js"></script>
