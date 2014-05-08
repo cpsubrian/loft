@@ -367,15 +367,18 @@ $(function() {
   */
   
   $(document).ready(function() {
-    if (!Modernizr.touch) {
-      $('.splash').imageScroll({
-        container: $('.main')
-      });
-    }
-    else {
-      $('body').addClass('device');
-      setStandardBackgrounds();
-    }
+    // if (!Modernizr.touch) {
+    //   $('.splash').imageScroll({
+    //     container: $('.main')
+    //   });
+    // }
+    // else {
+    //   $('body').addClass('device');
+    //   setStandardBackgrounds();
+    // } TEMPORARILY DISABLED
+
+    $('body').addClass('device');
+    setStandardBackgrounds();
 
     setTimeout(function() {
       if ($('body').hasClass('device')) {

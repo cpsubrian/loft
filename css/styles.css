@@ -49,7 +49,7 @@ NAV
   position: fixed;
   width: 100%;
   padding: 1rem;
-  z-index: 3;
+  z-index: 5;
   -webkit-transform: translateZ(1px);
   -moz-transform: translateZ(1px);
    transform: translateZ(1px);
@@ -190,7 +190,7 @@ section .splash {
   left: 0;
   bottom: 0;
   right: 0;
-  background: url('../img/diamond-bg.gif') center center;
+  background: url('../img/diamond6.png') center center;
   background-size: 120px 200px;
   z-index: 1;
   -webkit-transform: translateZ(1px);
@@ -198,12 +198,12 @@ section .splash {
    transform: translateZ(1px);
 }
 .imageHolder:nth-child(4) .diamond-overlay {
-  opacity: 0.4;
+  opacity: 0.15;
 }
 .imageHolder:nth-child(3) .diamond-overlay,
 .imageHolder:nth-child(2) .diamond-overlay,
 .imageHolder:nth-child(1) .diamond-overlay {
-  opacity: 0.6;
+  opacity: 0.2;
 }
 .image-mask {
   position: absolute;
