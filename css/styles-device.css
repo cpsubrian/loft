@@ -39,6 +39,7 @@ FORM
 .device .nav-wrapper,
 .device .form-wrapper,
 .device .prompt-wrapper,
+.device .section-header-wrapper,
 .device .image-mask,
 .device .diamond-overlay {
   -webkit-transform: none;
@@ -83,7 +84,7 @@ FORM
   left: 0;
   right: 0;
   margin: 0;
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.85);
 }
 .device .open-device .form .close {
   display: block;

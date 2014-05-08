@@ -10,6 +10,15 @@ NAV
     font-size: 20px;
   }
 
+  section .splash {
+    height: 18.25rem;
+  }
+
+  section .section-content {
+    padding: 2rem 3rem;
+    font-size: 18px;
+  }
+
   .nav-wrapper.visible {
     font-size: 0.9rem;
   }
@@ -41,3 +50,91 @@ NAV
 
 }
 
+/*
+---------------------------------------
+INTRO
+---------------------------------------
+*/
+
+@media (max-width: 880px) {
+
+  .prompt-text {
+    top: 0.55em;
+  }
+  .arrow {
+    position:relative;
+    top: -0.3em;
+  }
+
+}
+
+/*
+---------------------------------------
+ABOUT
+---------------------------------------
+*/
+
+@media (max-width: 880px) {
+
+  #two .section-content {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+  }
+  #two .left-column,
+  #two .right-column {
+    float: none;
+    display: block;
+  }
+  #two .left-column {
+    position: absolute;
+    width: 8rem;
+    -webkit-transform: translateX(-9%);
+    -moz-transform: translateX(-9%);
+     transform: translateX(-9%);
+  }
+  #two .right-column {
+    padding: 0;
+  }
+  #two .right-column p:last-child {
+    margin-bottom: 0;
+  }
+  #two .left-column .intro-photo {
+    width: 8rem;
+    height: 8rem;
+  }
+  #two .left-column .photo-inset-border {
+    top: 0.35rem;
+    left: 0.35rem;
+    bottom: 0.35rem;
+    right: 0.35rem;
+  }
+  #two .lead-in {
+    font-size: 1.35rem;
+    padding-left: 8.75rem;
+    padding-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+}
+
+/*
+---------------------------------------
+THE SPACE
+---------------------------------------
+*/
+
+@media (max-width: 880px) {
+
+  #three .left-column,
+  #three .right-column {
+    float: none;
+    width: 100%;
+  }
+  #three .left-column {
+    margin-bottom: 1rem;
+  }
+  #three .right-column {
+    padding-left: 0;
+  }
+
+}

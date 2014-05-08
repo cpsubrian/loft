@@ -58,12 +58,12 @@ $(function() {
   */
 
   function updateGallery() {
+    var height = Math.ceil(($('.gallery > li').eq(0).outerWidth() * 0.75));
+
     $.each($('.gallery > li'), function(k,v) {
       var $self = $(v);
 
-      var width = $self.outerWidth();
-
-      $self.css({ height: Math.ceil(width * 0.75) + 'px' });
+      $self.css({ height: height + 'px' });
     });
   }
 
@@ -372,9 +372,9 @@ $(function() {
     var $self = $(this);
     var $parent = $(this).parent();
     var sectionId = $self.attr('data-section-id');
-    var scrollPosition = $('#' + sectionId).offset().top;
+    var scrollPosition = Math.ceil($('#' + sectionId).offset().top);
 
-    if (sectionId == 'two') {
+    if (sectionId == 'two' || $('body').hasClass('device')) {
       scrollPosition -= $('.nav').outerHeight();
     }
 

@@ -637,16 +637,18 @@ THE SPACE
 -------------------------------
 */
 
-#three .left-column,
-#three .right-column {
-  display: table-cell;
-  vertical-align: top;
-}
 #three .left-column {
   width: 45%;
+  float: left;
 }
 #three .right-column {
-  padding-right: 2rem;
+  width: 55%;
+  float: right;
+}
+#three .left-column {
+}
+#three .right-column {
+  padding-left: 5%;
 }
 #three .right-column::after {
   content: '';
