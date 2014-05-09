@@ -286,6 +286,8 @@ $(function() {
         height: ref.outerHeight() + 'px',
         overflow: 'hidden'
       });
+
+      $(window).unbind('.deviceForm');
     }
 
     function openDeviceForm() {
@@ -295,7 +297,7 @@ $(function() {
       $form.addClass('visible');
       $formWrapper.addClass('open-device');
 
-      $(window).resize(function() {
+      $(window).on('resize.deviceForm', function() {
         clipBody($(window));
       });
     }
@@ -309,10 +311,12 @@ $(function() {
       
       $headerFonts.removeClass('tk-modesto');
 
-      $('html, body').css({
-        height: '',
-        overflow: ''
-      });
+      if ($('.open-device').length) {
+        $('html, body').css({
+          height: '',
+          overflow: ''
+        });
+      }
 
       $('.main').css({
         marginTop: ''
