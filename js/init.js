@@ -112,7 +112,7 @@ $(function() {
       var sectionStart = $section.offset().top;
       var sectionEnd = sectionStart + $section.outerHeight();
 
-      if ($section.attr('id') == 'two') {
+      if ($section.attr('id') == 'about') {
         sectionStart -= $('.nav').outerHeight();
       }
 
@@ -137,7 +137,7 @@ $(function() {
       $('.nav-wrapper').removeClass('visible');
     }
 
-    if (currentPosition >= $('#two').offset().top - $('.nav').outerHeight()) {
+    if (currentPosition >= $('#about').offset().top - $('.nav').outerHeight()) {
       $('.hidden-cta').addClass('visible');
     }
     else {
@@ -165,7 +165,7 @@ $(function() {
       });
 
       function resizeIntro() {
-        $('#one .splash').css({
+        $('#intro .splash').css({
           height: $(window).height() + 'px'
         });
       }
@@ -378,7 +378,7 @@ $(function() {
     var sectionId = $self.attr('data-section-id');
     var scrollPosition = Math.ceil($('#' + sectionId).offset().top);
 
-    if (sectionId == 'two' || $('body').hasClass('device')) {
+    if (sectionId == 'about' || $('body').hasClass('device')) {
       scrollPosition -= $('.nav').outerHeight();
     }
 

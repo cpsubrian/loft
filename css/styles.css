@@ -578,19 +578,19 @@ ABOUT
 -------------------------------
 */
 
-#two .section-body {
+#about .section-body {
   display: table;
   width: 100%;
 }
-#two .left-column,
-#two .right-column {
+#about .left-column,
+#about .right-column {
   display: table-cell;
   vertical-align: top;
 }
-#two .left-column {
+#about .left-column {
   width: 18rem;
 }
-#two .right-column {
+#about .right-column {
   padding-left: 3rem;
   padding-top: 1rem;
 }
@@ -637,29 +637,29 @@ THE SPACE
 -------------------------------
 */
 
-#three .left-column {
+#the-space .left-column {
   width: 45%;
   float: left;
 }
-#three .right-column {
+#the-space .right-column {
   width: 55%;
   float: right;
 }
-#three .left-column {
+#the-space .left-column {
 }
-#three .right-column {
+#the-space .right-column {
   padding-left: 5%;
 }
-#three .right-column::after {
+#the-space .right-column::after {
   content: '';
   display: table;
   clear: both;
 }
 
-#three h3 {
+#the-space h3 {
   margin: 0 0 0.5rem 0;
 }
-#three h3 .asterisk {
+#the-space h3 .asterisk {
   margin-left: 0.15em;
   font-size: 0.85em;
   position: relative;
@@ -700,8 +700,8 @@ THE SPACE
   color: #444;
 }
 
-#three .section-content .flourish,
-#five .section-content .flourish {
+#the-space .section-content .flourish,
+#contact .section-content .flourish {
   width: 100%;
   display: block;
   position: relative;
@@ -839,17 +839,17 @@ CONTACT
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-#five .flourish-inner {
+#contact .flourish-inner {
   padding-bottom: 1.5rem;
 }
-#five .flourish.directions .flourish-inner {
+#contact .flourish.directions .flourish-inner {
   padding-top: 3.5rem;
 }
-#five .flourish.parking .flourish-inner {
+#contact .flourish.parking .flourish-inner {
   padding-top: 2.25rem;
 }
 
-#five h3.section-subhead {
+#contact h3.section-subhead {
   margin: 0 0 2.25rem 0;
   text-align: center;
   font-size: 2rem;
@@ -858,21 +858,21 @@ CONTACT
   letter-spacing: 0.02em;
 }
 
-#five h3 {
+#contact h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
 }
-#five h4 {
+#contact h4 {
   margin-top: 0.75rem;
   margin-bottom: 0.5rem;
 }
 
-#five ul {
+#contact ul {
   padding-left: 1.25em;
   margin: 0;
 }
-#five li {
+#contact li {
   margin-bottom: 0.75em;
   color: #444;
   font-size: 0.9em;
