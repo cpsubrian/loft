@@ -797,6 +797,11 @@ EVENTS
 .caterer:last-child {
   margin-left: 2.5%;
 }*/
+#events .caterer::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 #events .caterer-logo,
 #events .caterer-contact-info {
   float: left;

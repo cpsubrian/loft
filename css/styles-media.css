@@ -1,4 +1,10 @@
 /*
+=======================================
+TABLET
+=======================================
+*/
+
+/*
 ---------------------------------------
 NAV
 ---------------------------------------
@@ -213,6 +219,271 @@ CONTACT
   }
   #contact .street-parking {
     margin-bottom: 2rem;
+  }
+
+}
+
+
+/*
+=======================================
+MOBILE
+=======================================
+*/
+
+/*
+---------------------------------------
+GENERAL
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  body,
+  section .section-content {
+    font-size: 15px;
+  }
+
+  section .section-content,
+  #about .section-content {
+    padding: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 0.75rem;
+  }
+
+  .device .form-flourish img {
+    width: 100%;
+  }
+
+  section .splash {
+    height: 13.25rem;
+  }
+  .section-header {
+    line-height: 9rem;
+    top: 0.35rem;
+    right: 0.35rem;
+    bottom: 0.35rem;
+    left: 0.35rem;
+  }
+  .section-header-inner {
+    width: 10rem;
+    height: 10rem;
+  }
+  .section-header h2 {
+    font-size: 1.5rem;
+  }
+  .flourish {
+    width: 4rem;
+  }
+  .flourish.top {
+    top: 0.35rem;
+  }
+  .flourish.bottom {
+    bottom: 0.35rem;
+  }
+
+}
+
+/*
+---------------------------------------
+HIDDEN STUFF
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  #about .left-column,
+  #events .photo-container,
+  #contact .contact-info .center-column,
+  #contact .map,
+  #contact .photo-container {
+    display: none;
+  }
+
+}
+
+/*
+---------------------------------------
+ABOUT
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  #about .lead-in {
+    padding: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+  }
+
+}
+
+
+/*
+---------------------------------------
+THE SPACE
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  #the-space .flourish-inner {
+    padding: 1.25rem 0 0.75rem 0;
+  }
+  #the-space .right-sub-column,
+  #the-space .left-sub-column {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  #the-space .right-sub-column,
+  #the-space .left-sub-column {
+    margin-top: 1.25rem;
+  }
+  #the-space .asterisk-content {
+    margin-top: 1rem;
+  }
+
+}
+
+
+/*
+---------------------------------------
+EVENTS
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  #events .left-column,
+  #events .right-column {
+    display: block;
+  }
+  #events .left-column {
+    width: auto;
+  }
+  #events .right-column {
+    margin-top: 1.25rem;
+  }
+  #events .caterers-row {
+    margin-bottom: 1.5rem;
+  }
+  #events .caterers-row:last-child {
+    margin-bottom: 0;
+  }
+  #events .caterer-logo {
+    width: 35%;
+    padding-right: 0.75rem;
+  }
+  #events .caterer-contact-info {
+    width: 65%;
+    padding-left: 0.75rem;
+  }
+  #events .caterer-logo img {
+    width: 100%;
+  }
+
+}
+
+
+/*
+---------------------------------------
+GALLERY
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  #gallery .section-content {
+    min-height: 0;
+  }
+
+  .gallery {
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+  }
+
+  .gallery li {
+    float: none;
+    display: inline-block;
+    width: 75%;
+  }
+
+}
+
+
+/*
+---------------------------------------
+CONTACT
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  #contact .contact-info {
+  width: 100%;
+  }
+  #contact .left-column,
+  #contact .right-column {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #contact h4 {
+    margin-bottom: 0.25rem;
+  }
+  #contact .title {
+    font-size: 1em;
+    margin-bottom: 0.5rem;
+  }
+  #contact .right-column h4 {
+    margin-top: 2rem;
+  }
+  #contact .flourish.directions .flourish-inner {
+    padding-top: 2rem;
+  }
+  #contact h3.section-subhead {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #contact .directions-text {
+    margin-top: 0;
+  }
+  .directions-1,
+  .directions-2 {
+    float: none;
+    width: 100%;
+  }
+  .directions-2 {
+    margin-top: 1.5rem;
+  }
+  #contact .metro {
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+  #contact .street-parking {
+    margin-bottom: 1.5rem;
+  }
+  #contact .right-column h4 {
+    margin-top: 1rem;
+  }
+  
+}
+
+
+/*
+---------------------------------------
+FOOTER
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  .footer-border-inner img {
+    width: 80%;
   }
 
 }

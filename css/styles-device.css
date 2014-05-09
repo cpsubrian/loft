@@ -54,7 +54,8 @@ FORM
    transform: translateY(-50%);
 }
 .device .form {
-  position: fixed;
+  position: absolute;
+  left: 0;
   z-index: 5;
   max-width: 100%;
   padding: 3rem;
@@ -79,6 +80,7 @@ FORM
   opacity: 1;
 }
 .device .open-device .form {
+  position: fixed;
   overflow: scroll;
   top: 0;
   bottom: 0;
