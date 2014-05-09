@@ -837,13 +837,12 @@ EVENTS
   margin-bottom: 1.5rem;
 }
 #events .photo-container {
-  text-align: center;
   margin-top: 2rem;
 }
 #events .intro-photo {
   display: inline-block;
-  width: 24rem;
-  height: 24rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 
