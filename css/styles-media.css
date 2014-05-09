@@ -22,6 +22,10 @@ NAV
   .nav-wrapper.visible {
     font-size: 0.9rem;
   }
+  .nav-wrapper.visible .nav-item {
+    font-size: 0.9em;
+    padding: 0.75rem;
+  }
   .nav-wrapper.visible .nav-links {
     display: table;
     width: 100%;
@@ -34,7 +38,7 @@ NAV
     vertical-align: middle;
   }
   .nav-wrapper.visible .nav-links .hidden-logo {
-    width: 11rem;
+    width: 10rem;
     padding: 0 1rem;
     margin: 0;
   }

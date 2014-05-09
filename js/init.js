@@ -111,12 +111,22 @@ $(function() {
 
       var sectionStart = $section.offset().top;
       var sectionEnd = sectionStart + $section.outerHeight();
+      var offset = 0;
+
+      if ($('body').hasClass('device')) {
+        sectionStart += 48;
+        offset = 500;
+      }
+      else {
+        offset = 200;
+      }
+      console.log(sectionStart);
 
       if ($section.attr('id') == 'about') {
         sectionStart -= $('.nav').outerHeight();
       }
 
-      if (!$section.next().length && currentPosition == ($('body').outerHeight() - $(window).height()) && ($(window).height() - $section.outerHeight()) < 200) {
+      if (!$section.next().length && currentPosition == ($('body').outerHeight() - $(window).height()) && ($(window).height() - $section.outerHeight()) < offset) {
         $('.nav-item.active').removeClass('active');
         $parent.addClass('active');
       }

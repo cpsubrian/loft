@@ -74,6 +74,7 @@ NAV
 }
 .nav-links .nav-item {
   float: left;
+  font-size: 1rem;
   padding: 1rem 1.5rem;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
@@ -90,7 +91,7 @@ NAV
   font-size: 2rem;
   font-weight: bold;
   padding: 0.5rem 0 0.35rem 0;
-  margin: 0 3rem;
+  margin-right: 3rem;
 }
 .nav-wrapper.visible {
   padding: 0;
@@ -197,9 +198,10 @@ section .splash {
   -moz-transform: translateZ(1px);
    transform: translateZ(1px);
 }
-.imageHolder:nth-child(4) .diamond-overlay {
+.imageHolder:nth-child(5) .diamond-overlay {
   opacity: 0.15;
 }
+.imageHolder:nth-child(4) .diamond-overlay,
 .imageHolder:nth-child(3) .diamond-overlay,
 .imageHolder:nth-child(2) .diamond-overlay,
 .imageHolder:nth-child(1) .diamond-overlay {
@@ -217,6 +219,7 @@ section .splash {
   -moz-transform: translateZ(1px);
    transform: translateZ(1px);
 }
+.imageHolder:nth-child(4) .image-mask,
 .imageHolder:nth-child(3) .image-mask,
 .imageHolder:nth-child(2) .image-mask,
 .imageHolder:nth-child(1) .image-mask {
@@ -731,6 +734,116 @@ THE SPACE
 
 .floor-plan img {
   width: 100%;
+}
+
+
+/*
+-------------------------------
+EVENTS
+-------------------------------
+*/
+
+.events-columns {
+  display: table;
+  width: 100%;
+}
+.events-columns .left-column,
+.events-columns .right-column {
+  display: table-cell;
+  vertical-align: top;
+}
+.events-columns .left-column {
+  width: 26rem;
+  padding-right: 3rem;
+}
+#events p {
+  margin-bottom: 0.75rem;
+}
+.events-columns ul {
+  margin: 0;
+  padding: 0 0 0 1.1em;
+}
+.events-columns li {
+  margin-bottom: 0.5em;
+  color: #444;
+}
+.events-columns li:last-child {
+  margin-bottom: 0;
+}
+#events h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.caterers {
+  margin-top: 1.5rem;
+}
+.caterers-row {
+  margin-bottom: 2.5rem;
+}
+.caterers-row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/*.caterer {
+  float: left;
+  width: 47.5%;
+}*/
+/*.caterer:first-child {
+  margin-right: 2.5%;
+}
+.caterer:last-child {
+  margin-left: 2.5%;
+}*/
+#events .caterer-logo,
+#events .caterer-contact-info {
+  float: left;
+}
+#events .caterer-logo {
+  width: 10rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1.5rem;
+}
+#events .caterer-logo img {
+  width: 8rem;
+}
+#events .caterer-contact-info {
+  padding-left: 1.5rem;
+  border-left: 1px solid #e3e3e3;
+}
+#events .caterer-name {
+  display: block;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.25rem;
+}
+#events .caterer p {
+  margin-bottom: 0;
+  line-height: 1.3em;
+}
+#events .address,
+#events .caterer-phone {
+  margin-bottom: 0.5rem;
+}
+#events .email {
+  font-size: 0.9em;
+}
+#events .email a {
+  color: #999;
+}
+#events .caterers h3 {
+  margin-bottom: 1.5rem;
+}
+#events .photo-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+#events .intro-photo {
+  display: inline-block;
+  width: 24rem;
+  height: 24rem;
 }
 
 
