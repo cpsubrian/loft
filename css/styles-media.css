@@ -321,7 +321,7 @@ HIDDEN STUFF
     width: 100%;
     padding: 0.5rem;
     background: rgba(0,0,0,0.95);
-    z-index: 10;
+    z-index: 5;
     text-align: center;
   }
 
@@ -349,6 +349,59 @@ HIDDEN STUFF
   }
   .mobile-nav .hidden-logo img {
     width: 100%;
+  }
+
+}
+
+
+/*
+---------------------------------------
+FORM
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  .device .form {
+    padding: 1.5rem;
+  }
+  .device .open-device .form {
+    -webkit-transform: translateZ(1px);
+    -moz-transform: translateZ(1px);
+     transform: translateZ(1px);
+  }
+  .device .close {
+    top: 0;
+  }
+  .device .form h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .device .form-flourish {
+    padding-bottom: 0.75rem;
+  }
+  .device .field {
+    float: none;
+  }
+  .device .form-row.two-up .field,
+  .device .form-row.two-up.alt .field,
+  .device .form-row.three-up .field {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .device .form .label {
+    font-size: 0.9rem;
+  }
+  .device .form .hidden-fields {
+    margin-top: 0.75rem;
+  }
+  .device .form-row.two-up .field:first-child,
+  .device .form-row.two-up.alt .field:first-child,
+  .device .form-row.three-up .field:nth-child(1),
+  .device .form-row.three-up .field:nth-child(2) {
+    margin-bottom: 0.75rem;
   }
 
 }
