@@ -120,7 +120,6 @@ $(function() {
       else {
         offset = 200;
       }
-      console.log(sectionStart);
 
       if ($section.attr('id') == 'about') {
         sectionStart -= $('.nav').outerHeight();
@@ -145,6 +144,13 @@ $(function() {
     }
     else if (!$('.open-device').length) {
       $('.nav-wrapper').removeClass('visible');
+    }
+
+    if (currentPosition > taglineCutoff && $('.device').length) {
+      $('.mobile-nav .hidden-logo').addClass('visible');
+    }
+    else {
+      $('.mobile-nav .hidden-logo').removeClass('visible');
     }
 
     if (currentPosition >= $('#about').offset().top - $('.nav').outerHeight()) {

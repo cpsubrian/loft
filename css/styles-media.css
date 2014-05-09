@@ -257,30 +257,30 @@ GENERAL
   }
 
   section .splash {
-    height: 13.25rem;
+    height: 10.5rem;
   }
   .section-header {
-    line-height: 9rem;
+    line-height: 7.25rem;
     top: 0.35rem;
     right: 0.35rem;
     bottom: 0.35rem;
     left: 0.35rem;
   }
   .section-header-inner {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
   }
   .section-header h2 {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
   }
   .flourish {
-    width: 4rem;
+    width: 3rem;
   }
   .flourish.top {
-    top: 0.35rem;
+    top: 0.25rem;
   }
   .flourish.bottom {
-    bottom: 0.35rem;
+    bottom: 0.25rem;
   }
 
 }
@@ -297,8 +297,107 @@ HIDDEN STUFF
   #events .photo-container,
   #contact .contact-info .center-column,
   #contact .map,
-  #contact .photo-container {
+  #contact .photo-container,
+  .nav {
     display: none;
+  }
+
+}
+
+
+/*
+---------------------------------------
+HIDDEN STUFF
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem;
+    background: rgba(0,0,0,0.95);
+    z-index: 10;
+    text-align: center;
+  }
+
+  a.nav-expand {
+    padding: 0.8rem;
+    position: absolute;
+    color: #888;
+    top: 0;
+    left: 0;
+    -webkit-transition: color 0.15s ease-in;
+    -moz-transition: color 0.15s ease-in;
+     transition: color 0.15s ease-in;
+  }
+  a.nav-expand:hover {
+    color: #fff;
+  }
+
+  .mobile-nav .hidden-logo {
+    opacity: 0;
+    display: inline-block;
+    width: 8rem;
+  }
+  .mobile-nav .hidden-logo.visible {
+    opacity: 1;
+  }
+  .mobile-nav .hidden-logo img {
+    width: 100%;
+  }
+
+}
+
+
+/*
+---------------------------------------
+INTRO
+---------------------------------------
+*/
+
+@media (max-width: 767px) {
+
+  .tagline {
+    padding: 1.5rem;
+    top: 30%;
+  }
+  .tagline .logo {
+    max-width: 100%;
+  }
+
+  .device .form-wrapper {
+    bottom: 20%;
+    padding: 0 1.5rem;
+  }
+
+  .prompt-inner {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .prompt-inset-border {
+    top: 0.15rem;
+    bottom: 0.15rem;
+    right: 0.15rem;
+    left: 0.15rem;
+  }
+  .prompt-text {
+    top: 0.45em;
+  }
+  
+  .hidden-form .form-open-button {
+    display: block;
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.75rem;
+  }
+  .hidden-form p {
+    max-width: 100%;
+    margin-top: 1rem;
   }
 
 }
