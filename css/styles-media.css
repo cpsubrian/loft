@@ -152,6 +152,62 @@ THE SPACE
 
 /*
 ---------------------------------------
+EVENTS
+---------------------------------------
+*/
+
+@media (max-width: 880px) {
+
+  .events-columns .left-column,
+  .events-columns .right-column {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .events-columns .left-column {
+    margin-bottom: 2rem;
+  }
+  .events-columns .left-column::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .events-columns .column-1,
+  .events-columns .column-2 {
+    float: left;
+    width: 50%;
+  }
+  .events-columns .column-1 {
+    padding-right: 1rem;
+  }
+  .events-columns .column-2 {
+    padding-left: 1rem;
+  }
+  #events .photo-container {
+    display: none;
+  }
+  .caterers-row {
+    float: left;
+    width: 50%;
+    font-size: 0.85rem;
+  }
+  #events .caterer-logo {
+    width: 7rem;
+  }
+  #events .caterer-logo img {
+    width: 6rem;
+  }
+  #events .caterer-contact-info {
+    padding-left: 1rem;
+  }
+
+}
+
+
+
+/*
+---------------------------------------
 CONTACT
 ---------------------------------------
 */
