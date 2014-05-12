@@ -520,6 +520,9 @@ INTRO
     top: 0.45em;
   }
   
+  .device .form-wrapper {
+    bottom: 25%;
+  }
   .hidden-form .form-open-button {
     display: block;
     width: 100%;
