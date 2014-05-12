@@ -187,10 +187,32 @@ EVENTS
   #events .photo-container {
     display: none;
   }
+  #events .caterers::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
   .caterers-row {
     float: left;
     width: 50%;
     font-size: 0.85rem;
+    margin-bottom: 0;
+    min-height: 10rem;
+  }
+  #events .caterer {
+    display: table;
+  }
+  .caterers-row:nth-child(even) {
+    padding-left: 1rem;
+  }
+  .caterers-row:nth-child(odd) {
+    padding-right: 1rem;
+  }
+  #events .caterer-logo,
+  #events .caterer-contact-info {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
   }
   #events .caterer-logo {
     width: 7rem;
@@ -575,7 +597,16 @@ EVENTS
     margin-top: 1.25rem;
   }
   #events .caterers-row {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 8rem;
+  }
+  .events-columns .column-1,
+  .events-columns .column-2 {
+    width: 100%;
+    float: none;
   }
   #events .caterers-row:last-child {
     margin-bottom: 0;
