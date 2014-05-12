@@ -502,7 +502,7 @@ INTRO
   }
 
   .device .form-wrapper {
-    bottom: 20%;
+    bottom: 25%;
     padding: 0 1.5rem;
   }
 
@@ -519,10 +519,7 @@ INTRO
   .prompt-text {
     top: 0.45em;
   }
-  
-  .device .form-wrapper {
-    bottom: 25%;
-  }
+
   .hidden-form .form-open-button {
     display: block;
     width: 100%;
