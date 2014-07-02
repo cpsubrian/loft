@@ -117,7 +117,7 @@ section .splash {
   left: 0;
   bottom: 0;
   right: 0;
-  background: url('../img/diamond-bg.gif') center center;
+  background: url('./img/diamond-bg.gif') center center;
   background-size: 120px 200px;
   z-index: 1;
   -webkit-transform: translateZ(1px);
